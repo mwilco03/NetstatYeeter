@@ -81,7 +81,7 @@ public class NetStatUtility
 
                 var netStatEntry = new NetStatResult
                 {
-                    CreationTime = ManagementDateTimeConverter.ToDateTime(tcpObj["Creation Time"].ToString(),
+                    CreationTime = ManagementDateTimeConverter.ToDateTime(tcpObj["Creation Time"].ToString()),
                     Protocol = "TCP",
                     LocalAddress = tcpObj["LocalAddress"]?.ToString(),
                     LocalPort = Convert.ToInt32(tcpObj["LocalPort"]),
